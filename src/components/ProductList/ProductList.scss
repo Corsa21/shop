@@ -1,0 +1,25 @@
+@import '../../styles/index.scss';
+
+.product-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: $width;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 769px) {
+    .product-list__list {
+        max-width: $widthTablet;
+    }
+}
+
+

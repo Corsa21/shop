@@ -1,0 +1,24 @@
+@import '../../styles/index.scss';
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    margin: 20px 0 20px 0;
+
+    &__img {
+        width: 20px;
+    }
+
+    &:not(.social:nth-child(1)){
+        margin-left: 8px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background: #E05C6E;
+    }
+}

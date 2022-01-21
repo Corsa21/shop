@@ -1,0 +1,62 @@
+@import '../../styles/index.scss';
+
+.HeaderMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        height: 2vw;
+        fill: #fff;
+        margin-right: 100px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item:not(:nth-child(4)) {
+        margin-right: 2vw;
+    }
+
+    &__item:nth-child(4){
+        margin-right: 4vw;
+    }
+
+    &__item:hover {
+        cursor: pointer;
+    }
+
+    &__basket {
+        cursor: pointer;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.85vw;
+        line-height: 23px;
+    }
+}
+
+@media (max-width:769px) {
+    .HeaderMenu {
+        &__link {
+            font-size: 3vw;
+        }
+
+        &__img {
+            margin-right: 0;
+            height: 4vw;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .HeaderMenu__link {
+        font-size: 4vw;
+    }
+}

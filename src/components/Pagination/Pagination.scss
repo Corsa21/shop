@@ -1,0 +1,29 @@
+.pagination {
+  margin-bottom: 100px;
+  border: 1px solid #EBEBEB;
+  display: flex;
+  
+  &__button {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    transition: background .3s ease;
+    cursor: pointer;
+
+
+    &:hover {
+      background: #222224;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .pagination {
+    width: 90vw;
+  }
+}

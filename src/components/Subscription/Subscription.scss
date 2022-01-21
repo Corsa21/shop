@@ -1,0 +1,31 @@
+@import '../../styles/index.scss';
+
+.subscription {
+    &__title {
+        margin-top: 140px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+        color: #222224;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        color: #222224;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+@media (max-width: 769px) {
+    .subscription {
+        &__title {
+            margin-top: 0;
+        }
+    }
+}

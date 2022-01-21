@@ -1,0 +1,25 @@
+@import '../../styles/index.scss';
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $width;
+    margin: 0 auto;
+
+    &List {
+        background: #222224;
+    }
+}
+
+@media (max-width:769px) {
+    .info {
+        width: $widthTablet;
+    }
+}
+
+@media (max-width: 376px) {
+    .info {
+        flex-direction: column-reverse;
+    }
+}

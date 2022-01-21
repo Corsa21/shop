@@ -1,0 +1,20 @@
+@import '../../styles/index.scss';
+
+
+.advantages {
+    background: #222224;
+}
+
+.advantageList {
+    display: flex;
+    justify-content: space-between;
+    width: $width;
+    margin: 0 auto;
+}
+
+@media (max-width: 769px) {
+    .advantageList {
+        flex-direction: column;
+        width: $widthTablet;
+    }
+}

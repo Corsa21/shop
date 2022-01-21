@@ -1,0 +1,25 @@
+@import '../../styles/index.scss';
+
+
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    width: $width;
+    margin: 0 auto;
+
+    &List {
+        background-image: url(../../../public/bg.png);
+        background-position-x: left;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 769px) {
+    .feedback {
+        flex-direction: column;
+        width: $widthTablet;
+    }
+}

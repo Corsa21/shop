@@ -1,0 +1,27 @@
+@import '../../styles/index.scss';
+
+.form {
+    display: flex;
+    justify-content: center;
+
+    &__btn {
+        padding: 14.5px;
+        border-radius: 0 25px 25px 0;
+        border: 1px solid #E05C6E;
+        background: #E05C6E;
+    }
+
+    &__input {
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid transparent;
+        border-radius: 25px 0 0 25px;
+        background: #E1E1E1;
+    }
+}
+
+@media (max-width: 769px) {
+    .form {
+        margin-bottom: 100px;
+    }
+}

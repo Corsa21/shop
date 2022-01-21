@@ -1,0 +1,125 @@
+@import '../../styles/index.scss';
+
+.product-card {
+    width: 32%;
+    margin-bottom: 30px;
+    background: $gray;
+    position: relative;
+
+    &:hover .product-card__layer{
+        transform: scale(1);
+    }
+
+    &:nth-child(1) {
+        margin-top: 50px;
+    }
+
+    &:nth-child(2) {
+        margin-top: 50px;
+    } 
+
+    &:nth-child(3) {
+        margin-top: 50px;
+    }
+
+
+    &__img {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    &__cost {
+        margin-bottom: 20px;
+        margin-left: 16px;
+        color: #F16D7F;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        margin-left: 16px;
+    }
+
+    &__text {
+        margin-bottom: 18px;
+        margin-left: 16px;
+        padding-right: 15px;
+    }
+
+    &__layer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.699);
+        height: 27.7vw;
+        transform: scale(0);
+        transition: ease all 0.3s;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: 1px solid #FFFFFF;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+
+    &__btn:hover {
+        cursor: pointer;
+        border: 1px solid #F16D7F;
+        color: #F16D7F;
+    }
+
+    &__btn:hover svg {
+        fill:#F16D7F;
+    }
+
+    &__btn svg {
+        width: 3vw;
+        fill: #fff;
+    }
+}
+
+
+@media (max-width: 769px) {
+    .product-card {
+        width: 49%;
+    }
+
+    .product-card:nth-child(9) {
+        display: none;
+    }
+
+    .product-card:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .product-card__layer {
+        height: 54.4vw;
+    }
+}
+
+@media (max-width: 376px) {
+    .product-card {
+        width: 100%;
+    }
+
+    .product-card:nth-child(2){
+        margin-top: 0;
+    }
+
+    .product-card:nth-child(1){
+        margin-top: 24px;
+    }
+
+    .product-card__layer {
+        height: 111vw;
+    }
+}
