@@ -5,7 +5,7 @@ import ProductList from './components/ProductList/ProductList';
 import HeaderList from './components/HeaderList/HeaderList';
 import AdvantageList from './components/AdvantageList/AdvantageList.jsx';
 import Footer from './components/Footer/Footer';
-import Product from './components/Product/Product';
+// import Product from './components/Product/Product';
 
 
 
@@ -20,7 +20,7 @@ function App() {
       <ProductList/>
       <AdvantageList/>
       <Footer/>
-      <Product/>
+      {/* <Product/> */}
       
     </div>
   );
