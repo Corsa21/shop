@@ -1,0 +1,69 @@
+@import '../../styles/index.scss';
+
+.productInfo {
+
+
+    * {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    &__title {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 71px;
+        color: #FFFFFF;
+    }
+
+    &__price {
+        margin-bottom: 60px;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 38px;
+        color: #FFFFFF;
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+        font-size: 18px;
+        line-height: 35px;
+        color: #FFFFFF;
+    }
+
+    &__img {
+        margin-bottom: 60px;
+        margin-left: 0;
+    }
+
+    &__clothes img {
+        width: 43vw;
+    }
+
+    &__clothes {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1025px) {
+    .productInfo {
+        width: 100%;
+    }
+}

@@ -1,10 +1,16 @@
 import './Product.scss';
-import HeaderList from '../HeaderList/HeaderList.jsx'
+import HeaderList from '../HeaderList/HeaderList.jsx';
+import ProductBuy from '../ProductBuy/ProductBuy';
+import Footer from '../Footer/Footer';
 
 export default function Product() {
     return (
-    <div className="product">
-        <HeaderList/>
-    </div>
+    <>
+    <HeaderList/>
+      <div className="product">
+        <ProductBuy/>
+      </div>
+      <Footer/>
+    </>
   )
 }

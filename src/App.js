@@ -14,9 +14,6 @@ function App() {
     <div className="App">
      
       <HeaderList/>
-      {/* <Header/>
-      <Navbar/>
-      <Filters/> */}
       <ProductList/>
       <AdvantageList/>
       <Footer/>

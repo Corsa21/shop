@@ -1,1 +1,14 @@
 @import '../../styles/index.scss';
+
+.product {
+    display: flex;
+    justify-content: center;
+    width: $width;
+    margin: 0 auto;
+}
+
+@media (max-width: 1025px) {
+    .product {
+        width: 100vw;
+    }
+}

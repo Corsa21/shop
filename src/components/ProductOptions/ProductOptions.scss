@@ -1,0 +1,145 @@
+@import '../../styles/index.scss';
+
+.productOptions {
+    border: 1px solid $black;
+    border-radius: 50px 50px 0px 0px;
+    background: #fff;
+    
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btnsColors {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btnSize {
+        padding: 1vw 1vw;
+        border: 2px solid #000000;
+        border-radius: 2px;
+        background: transparent;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    &__btnSize:not(.productOptions__btnSize:nth-child(1)) {
+        margin-left: 25px;
+    }
+
+    &__btnSize:nth-child(6) {
+        margin-right: 50px;
+    }
+
+    &__btnSize:hover {
+        background: $black;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &__btnSize:active {
+        border: 2px solid #E05C6E;
+    }
+
+    &__btnSize:nth-child(1) {
+        margin-left: 50px;
+    }
+
+    &__btnColor {
+        width: 40%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid #000000;
+        border-radius: 2px;
+        margin-bottom: 50px;
+        
+    }
+
+    &__btnColor:nth-child(1) {
+        margin-left: 50px;
+    }
+
+    &__btnColor:hover {
+        cursor: pointer;
+        transform: scale(.95);
+    }
+
+    &__btnColor_black {
+        background: black;
+        color: #fff;
+    }
+    
+    &__btnColor_white {
+        background: transparent;
+        color: #000;
+        margin-right: 50px;
+    }
+
+    &__title {
+        margin-left: 50px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 24px;
+        color: #000000;
+
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        background: #5A5EFF;
+        font-size: 30px;
+        line-height: 33px;
+        color: #FFFFFF;
+    }
+
+    &__btn img {
+        width: 40px;
+        margin-right: 70px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .productOptions {
+        &__btnSize:nth-child(1) {
+            margin-left: 0;
+        }
+
+        &__btnSize:nth-child(6) {
+            margin-right: 0;
+        }
+
+        
+
+        &__btns {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+        }
+
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            margin-left: 15px;
+        }
+
+        &__btn img {
+            margin-right: 20px;
+        }
+    }
+}
