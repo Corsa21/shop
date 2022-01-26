@@ -9,7 +9,6 @@
     }
     
     &__title {
-        margin-top: 25px;
         margin-bottom: 10px;
         font-style: italic;
         font-weight: 700;
@@ -65,5 +64,9 @@
 @media (max-width: 1025px) {
     .productInfo {
         width: 100%;
+
+        &__title {
+            font-size: 8vw;
+        }
     }
 }

@@ -7,7 +7,7 @@
     
     &__btns {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     &__btnsColors {
@@ -125,7 +125,6 @@
             justify-content: center;
             flex-wrap: wrap;
             align-items: center;
-            gap: 15px;
         }
 
         &__btn {

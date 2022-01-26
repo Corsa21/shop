@@ -6,7 +6,7 @@ export default function HeaderMenu() {
       <nav className="HeaderMenu__list">
         <div className="HeaderMenu__item"><a href="" className="HeaderMenu__link">Home</a></div>
         <div className="HeaderMenu__item"><a href="" className="HeaderMenu__link">About</a></div>
-        <div className="HeaderMenu__item"><a href="" className="HeaderMenu__link">Products</a></div>
+        <div className="HeaderMenu__item"><a href="/" className="HeaderMenu__link">Products</a></div>
         <div className="HeaderMenu__item"><a href="" className="HeaderMenu__link">Contact</a></div>
       </nav>
       <div className="HeaderMenu__basket">
