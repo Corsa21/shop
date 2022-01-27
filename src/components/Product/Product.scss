@@ -1,12 +1,16 @@
 @import '../../styles/index.scss';
 
 .product {
-    width: $width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98.9vw;
     margin: 0 auto;
 }
 
 @media (max-width: 1025px) {
     .product {
+        flex-direction: column;
         width: 100vw;
     }
 }

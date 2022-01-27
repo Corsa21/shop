@@ -2,4 +2,11 @@
 
 .productBuy {
     background: $black;
+    max-width: 724px;
+}
+
+@media (max-width:1025px) {
+    .productBuy {
+        width: 100%;
+    }
 }

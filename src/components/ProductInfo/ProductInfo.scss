@@ -2,6 +2,9 @@
 
 .productInfo {
 
+    display: flex;
+    align-items: center;
+
 
     * {
         margin-left: 40px;
@@ -47,17 +50,7 @@
         margin-left: 0;
     }
 
-    &__clothes img {
-        width: 43vw;
-    }
-
-    &__clothes {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 40px;
-        display: flex;
-        justify-content: center;
-    }
+    
 
 }
 
@@ -67,6 +60,15 @@
 
         &__title {
             font-size: 8vw;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .productInfo {
+        * {
+            margin-right: 0;
+            padding-right: 10px;
         }
     }
 }
