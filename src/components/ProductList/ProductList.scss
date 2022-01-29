@@ -13,13 +13,12 @@
         justify-content: space-between;
         max-width: $width;
         margin-bottom: 40px;
+
+        @include down (md, 1) {
+            width: col(18);
+        }
     }
 }
 
-@media (max-width: 769px) {
-    .product-list__list {
-        max-width: $widthTablet;
-    }
-}
 
 

@@ -5,7 +5,7 @@ import Pagination from '../Pagination/Pagination';
 
 import './ProductList.scss';
 
-export default function ProductList() {
+export default function ProductList(props) {
     return (
     <div className="product-list">
         <div className='product-list__list'>

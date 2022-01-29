@@ -15,6 +15,6 @@
 @media (max-width: 769px) {
     .advantageList {
         flex-direction: column;
-        width: $widthTablet;
+        width: col(18);
     }
 }

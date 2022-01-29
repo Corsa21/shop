@@ -20,6 +20,6 @@
 @media (max-width: 769px) {
     .feedback {
         flex-direction: column;
-        width: $widthTablet;
+        width: col(18);
     }
 }

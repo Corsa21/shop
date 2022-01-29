@@ -1,0 +1,30 @@
+@import '../../styles/index.scss';
+
+.Header{
+    background: #222224;
+    font-family: Lato;
+    height: vh(75);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $width;
+        height: 100%;
+        margin: 0 auto;
+
+        @include down (md) {
+            width: col(18);
+        }
+    }
+}
+
+// @media (max-width:769px) {
+//     .HeaderList {
+//         max-width: $widthTablet;
+//     }
+    
+// }

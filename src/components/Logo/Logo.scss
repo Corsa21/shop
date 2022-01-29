@@ -1,9 +1,21 @@
 @import '../../styles/index.scss';
 
 .Logo {
-    max-width: 200px;
+    height: 80%;
+    width: col(4);
+    cursor: pointer;
+    
+    svg {
+        height: 100%;
+        path {
+            fill: white;
+            transition: fill .3s ease;
+        }
+    }
 
-    &__img {
-        width: 100%;
+    &:hover {
+        path {
+            fill: pink;
+        }
     }
 }
