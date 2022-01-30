@@ -2,7 +2,7 @@ import './ProductInfo.scss';
 
 export default function ProductInfo() {
   return (
-    <div className="productInfo">
+    <div className="productInfo productInfo_margin">
       <div className="productInfo__list">
         <div className="productInfo__title">Skorper Tee</div>
         <div className="productInfo__price">$145</div>

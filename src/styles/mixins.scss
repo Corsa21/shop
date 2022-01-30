@@ -42,9 +42,9 @@ $breakpoints: (
         font-size: calc(#{smooth-value($desktop-1440, $desktop-1920, map-get($breakpoints, xxl), map-get($breakpoints, fhd), 'w')});
     }
 
-    //@include up(2k) {
-    //    font-size: calc(#{$desktop-fhd / 1920 * 100 / 2}vw + #{$desktop-fhd / 1080 * 100 / 2}vh);
-    //}
+    @include up(2k) {
+       font-size: calc(#{$desktop-fhd / 1920 * 100 / 2}vw + #{$desktop-fhd / 1080 * 100 / 2}vh);
+    }
 }
 
 
@@ -61,4 +61,15 @@ $breakpoints: (
             @content;
         }
     }
+}
+
+@mixin adaptivFont($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media (max-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / 1920));
+	}
+	@media (min-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / 1920));
+	}
 }

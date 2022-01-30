@@ -17,7 +17,9 @@ export default function Basket(props) {
         </div>
         { open && <div className="basket__modal">
           {basket.map((el, i) => <div key={i} className="basket__item">
-            <span>{el.title}</span> <b>{el.cost}</b>
+            <div className="basket__product">
+             Name: <br/><span className='basket__name'>{el.title}</span> <br/>Cost: <br/><span className='basket__cost'>{el.cost}</span>
+            </div>
           </div>)}
         </div>
         }

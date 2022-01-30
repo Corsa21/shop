@@ -1,7 +1,11 @@
+@import '../../styles/index.scss';
+
+
 .pagination {
   margin-bottom: 100px;
   border: 1px solid #EBEBEB;
   display: flex;
+  justify-content: space-around;
   
   &__button {
     width: 45px;
@@ -20,10 +24,15 @@
       color: #fff;
     }
   }
+
+  @include down (md) {
+      width: col(12);
+  }
+
+  @include down (sm) {
+    width: col(18);
+}
 }
 
-@media (max-width: 376px) {
-  .pagination {
-    width: 90vw;
-  }
-}
+
+

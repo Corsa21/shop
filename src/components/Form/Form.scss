@@ -11,6 +11,10 @@
         background: #E05C6E;
     }
 
+    &__btn:hover {
+        cursor: pointer;
+    }
+
     &__input {
         padding-left: 20px;
         padding-right: 20px;

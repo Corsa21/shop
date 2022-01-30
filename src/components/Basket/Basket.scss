@@ -1,19 +1,52 @@
+@import '../../styles/index.scss';
+
 .basket {
     position: relative;
+    left: 0;
+
+    &__product {
+        margin-left: 5px;
+        font-family: Roboto;
+        font-weight: 700;
+    }
+
+    &__name {
+        font-weight: 400;
+    }
+
+    &__cost {
+        font-weight: 400;
+    }
 
     &__button {
 
         svg{
-            width: 64px;
-            height: 64px;
+            width: 24px;
+            height: 24px;
+            fill: white;
         }
     }
 
     &__modal {
         position: absolute;
-        height: 100px;
-        width: 100px;
+        width: col(3);
+        left: col(-1.4);
         background: white;
         border: 1px solid;
+
+        @include up(fhd) {
+            width: 200px;
+            left: -80px;
+        }
+
+        @include down (md) {
+            left: col(-3);
+            width: col(6);
+        }
+
+        @include down(sm) {
+            left: col(-5);
+            width: col(8);
+        }
     }
 }

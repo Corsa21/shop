@@ -1,9 +1,9 @@
 @import '../../styles/index.scss';
 
+
 .Header{
     background: #222224;
-    font-family: Lato;
-    height: vh(75);
+    height: vh(80);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -12,19 +12,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: $width;
+        max-width: col(18);
         height: 100%;
         margin: 0 auto;
 
-        @include down (md) {
-            width: col(18);
-        }
+        
     }
 }
 
-// @media (max-width:769px) {
-//     .HeaderList {
-//         max-width: $widthTablet;
-//     }
-    
-// }

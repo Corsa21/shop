@@ -17,7 +17,7 @@
     }
 
     &__item:not(:nth-child(4)) {
-        margin-right: 2vw;
+        margin-right: 1vw;
     }
 
     &__item:nth-child(4){
@@ -35,24 +35,17 @@
     &__link {
         text-decoration: none;
         color: #fff;
+        font-family: Roboto;
         font-weight: 500;
         font-size: 1.85vw;
         line-height: 23px;
     }
+
+    
 }
 
-@media (max-width:769px) {
-    .HeaderMenu {
-        &__link {
-            font-size: 3vw;
-        }
 
-        &__img {
-            margin-right: 0;
-            height: 4vw;
-        }
-    }
-}
+
 
 @media (max-width: 376px) {
     .HeaderMenu__link {

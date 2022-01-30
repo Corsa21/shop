@@ -10,7 +10,7 @@ export default function ProductList(props) {
     <div className="product-list">
         <div className='product-list__list'>
             { productData.map(
-                (el, i ) => <ProductCard key={i} image={el.image} title={el.title} text={el.text} cost={Math.floor(Math.random() * (300-100) +110)}/>
+                (el, i ) => <ProductCard key={i} image={el.image} title={el.title} text={el.text} cost={el.cost}/>
             )}     
         </div>  
 

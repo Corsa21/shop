@@ -4,22 +4,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: $width;
+    width: col(18);
     margin: 0 auto;
 
     &List {
         background: #222224;
     }
-}
 
-@media (max-width:769px) {
-    .info {
+    @include down (md) {
         width: col(18);
+        flex-direction: column-reverse;
+        
     }
 }
 
-@media (max-width: 376px) {
-    .info {
-        flex-direction: column-reverse;
-    }
-}
+
+

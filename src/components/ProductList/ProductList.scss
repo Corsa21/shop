@@ -11,12 +11,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        max-width: $width;
+        max-width: col(18);
         margin-bottom: 40px;
 
-        @include down (md, 1) {
-            width: col(18);
-        }
+        
     }
 }
 

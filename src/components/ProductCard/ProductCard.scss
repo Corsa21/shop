@@ -38,11 +38,19 @@
     }
 
     &__title {
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
         margin-bottom: 12px;
         margin-left: 16px;
     }
 
     &__text {
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
         margin-bottom: 18px;
         margin-left: 16px;
         padding-right: 15px;
@@ -57,7 +65,7 @@
         left: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.699);
-        height: 27.7vw;
+        height: 28vw;
         transform: scale(0);
         transition: ease all 0.3s;
     }
