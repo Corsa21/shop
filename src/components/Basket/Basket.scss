@@ -3,6 +3,7 @@
 .basket {
     position: relative;
     left: 0;
+    font-size: 12px;
 
     &__product {
         margin-left: 5px;
@@ -29,24 +30,43 @@
 
     &__modal {
         position: absolute;
-        width: col(3);
-        left: col(-1.4);
+        width: col(10);
+        right: 0;
+        top: 42.76px;
         background: white;
         border: 1px solid;
+        padding: 8px 8px;
 
-        @include up(fhd) {
-            width: 200px;
-            left: -80px;
+        tr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }   
+
+        thead,
+        tbody {
+            display: inline-block;
+            width: 100%;
+            
         }
 
-        @include down (md) {
-            left: col(-3);
-            width: col(6);
+        thead {
+            padding-bottom: 8px;
+            border-bottom: 1px solid #000;
         }
 
-        @include down(sm) {
-            left: col(-5);
-            width: col(8);
+        td {
+            width: 25%;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            text-align: center;
+
         }
+
+        
     }
+
+    
 }
